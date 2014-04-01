@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>YouTube JavaScript APIs  with Bootstrap 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="ytcustom.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+
+         <div class="col-md-12 column">
+        <h3 class="text-primary">
+        YouTube API with Bootstrap 3  <button id="btnChangeVid" class="btn btn-sm btn-success pull-right "> <span class="glyphicon glyphicon-facetime-video"></span> Change Vid</button>
+        </h3>
+        <p>
+        How to retrieve images and data from YouTube. Featuring a "responsive" video player.
+        </p>
+      </div>
+        <div class="col-md-8 column">
+          <!-- use this tool for options
+                              https://developers.google.com/youtube/youtube_player_demo
+          -->
+          <div class="text-center">
+            <div id="yt-frame" class="yt-vid">
+              <div id="alertmess" class="alert alert-danger alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button> <strong>Please wait...</strong>
+                <p>
+                This page gets data from youtube api.
+                </p>
+              </div>
+
+                <div id="yt-spinner"></div>
+
+             </div>
+            <span id="yt-thumbnail1"> ~  loading thumb1</span>
+            <span id="yt-thumbnail2"> ~  loading thumb2</span>
+            <span id="yt-thumbnail3"> ~  loading thumb3</span>
+            <span id="yt-thumbnail" > ~  loading thumb</span>
+
+
+            <br>
+          </div>
+        </div>
+
+
+        <div class="col-md-4 column">
+          <div class="panel panel-primary">
+            <div class="panel-heading" >
+
+              <h2 class="panel-title text-center" id="yt-title">
+              ~  loading title
+              </h2>
+
+              <div id="yt-author" class="text-center">
+                ~  loading author
+              </div>
+
+            </div>
+            <div class="panel-body">
+              <p class="yt-description"></p>
+
+
+            </div>
+            <div class="panel-footer">
+              <div id="yt-viewcount">
+                ~  loading views
+              </div>
+
+              <div id="yt-duration">
+                ~  loading duration
+              </div>
+              <div id="yt-published">
+                ~  loading date
+              </div>
+
+
+              <br>
+              <div id="yt-link">
+                ~  loading link
+              </div>
+            </div>
+          </div>
+          </div> <!-- /.col-md-4-->
+          <div class="text-center">
+
+          <img class="class="text-center yt-pad10" src="https://developers.google.com/youtube/images/pwrdByYT-black.png" width="148" alt="">
+          </div>
+
+          </div> <!-- /.row -->
+          <hr>
+          </div> <!-- /.container-->
+          <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+          <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+          <script src="ytapi.js"></script>
+        </body>
+      </html>

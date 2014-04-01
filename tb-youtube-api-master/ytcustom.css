@@ -1,0 +1,41 @@
+.container {
+  margin-top:  15px;
+}
+
+.panel-body{
+  min-height:260px;
+}
+
+
+.yt-pad5 {
+  padding: 5px;
+}
+
+.yt-pad10 {
+  padding: 10px;
+}
+/*
+Reference: http://avexdesigns.com/responsive-youtube-embed/
+*/
+
+.yt-vid {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.yt-vid iframe, .yt-vid object, .yt-vid embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#yt-spinner {
+    color:#999;
+    margin: 1em;
+    font-size: 30px;
+
+}
